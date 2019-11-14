@@ -1,0 +1,50 @@
+【资源地址：https://www.liaoxuefeng.com/wiki/1016959663602400】
+
+TCP
+http 规定Client先发送请求，服务端收到后再发请求。
+
+UDP
+不需要建立连接，知地址和端口即可发数据，可靠性差，但速度快。
+
+SMTP
+Mail User Agent 	   邮件用户代理
+Mail Transterfer Agent 邮件传输代理
+Mail Delivery Agent    邮件投递代理
+发件人 => MUA => MTA -> MTA.... -> MTA -> MUA -> 收件人
+
+MySQL
+Alchemy:ORM框架
+
+Web开发
+阶段一：静态web页面
+阶段二：Common Gateway Interface:简称CGI 用c/c++开发的
+阶段三：ASP/JSP/PHP:asp用VBScript编写的，jsp用java编写的，php本身是开源的脚本语言
+阶段四：MVC：Model-View-Controller，asp发展为asp.net,jsp和php也有一堆mvc框架
+阶段新：异步开发，mvvm层出不穷
+
+Apache/Nginx/Lighttpd
+Web Service Gateway Interface:WSGI(web请求统一入口函数)
+
+Web框架
+Flask：默认支持jinja2模板
+Django：全能型web框架
+web.py：小巧的web框架
+Bottle：和Flask类似的web框架
+Tornado：Facebook的开源异步web框架
+
+常见的模板：
+jinja2
+Mako
+Cheetah
+Django
+
+协程：又称为“微线程”，纤程，英文名“coroutine”，python对协程的支持是通过generater实现的。
+asyncio:异步IO的标准库，实现了TCP、UDP、SSL等协议。
+asyn和await是针对coroutine的新语法，把@asyncio.coroutine替换为async；把yield from替换为await（注意新语法只能用在Python 3.5以及后续版本）。
+aiohttp：可以实现单线程并发IO操作，是基于asyncio实现的http框架。
+
+
+
+
+
+

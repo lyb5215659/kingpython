@@ -1,0 +1,27 @@
+【实战，资源地址：https://www.liaoxuefeng.com/wiki/1016959663602400/1018138095494592】
+
+一、搭建开发环境
+
+①pip install aiohttp：安装aiohttp异步框架，如果报错如下，则执行pip3 install --upgrade pip即可。
+
+You are using pip version 19.0.3, however version 19.3.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+lyb521569@lyb521569:~/PycharmProjects/test/files   pip install --upgrade pip
+DEPRECATION: Python 2.7 will reach the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 won't be maintained after that date. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Requirement already up-to-date: pip in /usr/local/lib/python2.7/site-packages (19.3.1)
+
+②pip3 install jinja2:安装jinja2前端模板引擎。
+③pip3 install aiomysql：安装MySQL的Python异步驱动程序。
+
+二、创建项目目录：如下结构并加入github
+└── awesome-python3-webapp
+    ├── LICENSE
+    ├── backup
+    ├── conf
+    ├── dist
+    ├── ios
+    └── www
+        ├── static
+        └── templates
+
+二、编写web App框架

@@ -25,3 +25,24 @@ Requirement already up-to-date: pip in /usr/local/lib/python2.7/site-packages (1
         └── templates
 
 二、编写web App框架
+编写框架：app.py文件
+启动项目：python3 app.py
+
+	运行报错：====================
+	app.py:13: DeprecationWarning: loop argument is deprecated
+  app=web.Application(loop=loop)
+app.py:15: DeprecationWarning: Application.make_handler(...) is deprecated, use AppRunner API instead
+  srv=yield from loop.create_server(app.make_handler(),'127.0.9.1',9000)
+Traceback (most recent call last):
+  File "app.py", line 20, in <module>
+    loop.run_until_complete(init(loop))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 584, in run_until_complete
+    return future.result()
+  File "app.py", line 15, in init
+    srv=yield from loop.create_server(app.make_handler(),'127.0.9.1',9000)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/base_events.py", line 1378, in create_server
+    % (sa, err.strerror.lower())) from None
+OSError: [Errno 49] error while attempting to bind on address ('127.0.9.1', 9000): can't assign requested address
+	================================
+
+	

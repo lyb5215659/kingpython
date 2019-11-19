@@ -45,4 +45,25 @@ Traceback (most recent call last):
 OSError: [Errno 49] error while attempting to bind on address ('127.0.9.1', 9000): can't assign requested address
 	================================
 
+	以上报错原因之一：服务地址127.0.9.1地址写错 应为：127.0.0.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
+
